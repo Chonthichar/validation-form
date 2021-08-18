@@ -1,6 +1,3 @@
-function submit() {
-    document.getElementById('click').innerHTML = "Hey you";
+function send() {
+  console.log('Hello');
 }
-
-
-
