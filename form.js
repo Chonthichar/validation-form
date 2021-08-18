@@ -1,6 +1,6 @@
-function ohFunction() {
+function submit() {
     document.getElementById('click').innerHTML = "Hey you";
 }
-console.log('call me')
+
 
 
