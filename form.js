@@ -16,8 +16,12 @@ function passwords() {
     if (passwordForm.length < 8) {
         document.getElementById('message').innerHTML = 'Password length must be between at least 8 characters';
         return false;
+
+    } else if(passwordForm.length > 15){
+        document.getElementById('messages').innerHTML = 'Password length must not over 15 charecters';
+        return false;
     } else {
-        document.getElementById('message').innerHTML = 'Password is correct';
+        document.getElementById('messagess').innerHTML = 'Password correct';
         return true;
     }
 }
@@ -28,3 +32,6 @@ function send() {
     console.log(emailForm, passwordForm);
 }
 
+function fun() {
+    document.getElementById('form').reset();
+}
