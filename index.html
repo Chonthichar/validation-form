@@ -4,24 +4,24 @@
     <title>Validation form</title>
 </head>
 <body>
-        <div class="text">
-            <h3> Sign-In</h3>
-            <form id="form" novalidate>
-                <div class="input-group">
-                    <label for="email">Email Address</label>
-                    <input name="Email" type="email" id="email" onchange="(emails())">
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input name="Password" type="password" id="password" oninput="passwords()">
-                    <input id="submit" type="button" name="submit" value="Press Okay" onclick="send()">
-                </div>
-            </form>
+<div class="text">
+    <h3> Sign-In</h3>
+    <form id="form" novalidate>
+        <div class="input-group">
+            <label for="email">Email Address</label>
+            <input name="Email" type="email" id="email" onchange="(emails())">
         </div>
-<p id="texts" style="color:green"></p>
-        <p id="message" style="color: red"></p>
-        <p id="messages" style="color: darkcyan">
-            <p id="messagess"style="color: aqua"></p>
-        <button type="reset"  value="Reset" onclick="fun">Reset</button>
-<script src="./form.js"></script>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input name="Password" type="password" id="password" oninput="passwords()">
+            <input id="submit" type="button" name="submit" value="Press Okay" onclick="send()">
+        </div>
+    </form>
+    <p id="texts" style="color:green"></p>
+    <p id="message" style="color: red"></p>
+    <p id="messages" style="color: darkcyan">
+    <p id="messagess" style="color: aqua"></p>
+    <button type="reset" value="Reset" onclick="dataReset()">Reset</button>
+    <script src="./form.js"></script>
 </body>
 </html>
