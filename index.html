@@ -9,15 +9,16 @@
             <form id="form" novalidate>
                 <div class="input-group">
                     <label for="email">Email Address</label>
-                    <input name="Email" type="email" id="email">
+                    <input name="Email" type="email" id="email" onchange="(emails())">
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <input name="Password" type="password" id="password">
+                    <input name="Password" type="password" id="password" oninput="passwords()">
                     <input id="submit" type="button" name="submit" value="Press Okay" onclick="send()">
                 </div>
             </form>
         </div>
 <p id="texts" style="color:green"></p>
+        <p id="message" style="color: red"></p>
 <script src="./form.js"></script>
 </body>
 </html>
